@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.AAA {
+    text-align: justify;
+}
+
+img{
+    height: 150px;
+}
+
+.container {  
+    max-width: 800px;  
+    margin: auto;  
+    background: white;  
+    padding: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    border-radius: 8px;  
+}  
+
+.circles {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    margin-bottom: 20px;  
+}  
+
+.circle {  
+    background-color: red;  
+    color: white;  
+    border-radius: 50%;  
+    text-align: center;  
+    width: 150px;  
+    height: 150px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    margin: 10px;  
+    font-weight: bold;  
+}  
+
+.product-image img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 8px;  
+}  
+
+h2 {  
+    margin-top: 20px;  
+}  
+
+ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+
+ul li {  
+    background: #eaeaea;  
+    margin: 5px 0;  
+    padding: 10px;  
+    border-radius: 4px;  
+}
+/* Cabeçalho */
+.header {
+    position: relative;
+    height: 250px;
+    background: url('framboesas.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: offsetX offsetY blur-radius color;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hamburger {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Menu lateral */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #ff4d4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.menu.open {
+    right: 0;
+}
+
+/* Texto principal */
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.imagem{
+    height: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-content h2 {
+        font-size: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+}
